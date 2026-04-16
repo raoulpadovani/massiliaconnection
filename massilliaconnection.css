@@ -252,7 +252,7 @@
   .legal-line { font-size: 12px; line-height: 1.7; color: rgba(255,255,255,0.65); margin-bottom: 6px; }
   .legal-line:last-child { margin-bottom: 0; }
   .legal-line strong { color: rgba(255,255,255,0.9); font-weight: 600; }
-  .legal-page { min-height: 100vh; background: #0c0c0c; color: #e0e0e0; font-family: 'Manrope', 'Segoe UI', sans-serif; padding: 32px 16px; }
+  .legal-page { height: 100%; background: #0c0c0c; color: #e0e0e0; font-family: 'Manrope', 'Segoe UI', sans-serif; padding: 32px 16px; display: flex; flex-direction: column; }
   .legal-container { max-width: 960px; margin: 0 auto; }
   .legal-back { display: inline-block; margin-bottom: 14px; color: var(--accent); text-decoration: none; font-size: 11px; letter-spacing: 1.3px; text-transform: uppercase; }
   .legal-back:hover { color: var(--accent-2); }
