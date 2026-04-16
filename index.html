@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Massilia Connection | Événementiel, Spectacle et Cinéma en PACA</title>
-  <meta name="description" content="Massilia Connection rassemble des professionnels de l'événementiel, du spectacle vivant et du cinéma en région PACA. Coordination d'équipes techniques, régie, structure et logistique.">
+  <title>Massilia Connection | Événementiel, Spectacle et Cinéma à Marseille et en PACA</title>
+  <meta name="description" content="Massilia Connection accompagne vos projets événementiels, spectacle vivant et cinéma à Marseille et en région PACA: régie, équipes techniques, structure, logistique et coordination terrain.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Massilia Connection">
   <meta name="theme-color" content="#2ec4b6">
+  <meta name="geo.region" content="FR-13">
+  <meta name="geo.placename" content="Marseille">
   <link rel="canonical" href="https://massiliaconnection.com/">
   <link rel="alternate" hreflang="fr" href="https://massiliaconnection.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
@@ -18,11 +22,13 @@
   <meta property="og:description" content="Réseau de professionnels en PACA pour vos projets événementiels, spectacle et cinéma: régie, équipes techniques, structure et logistique.">
   <meta property="og:url" content="https://massiliaconnection.com/">
   <meta property="og:image" content="https://massiliaconnection.com/asset/logo/favicon-octopus.png">
+  <meta property="og:image:alt" content="Logo Massilia Connection, collectif événementiel à Marseille et en PACA">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Massilia Connection | Événementiel, Spectacle et Cinéma en PACA">
+  <meta name="twitter:title" content="Massilia Connection | Événementiel, Spectacle et Cinéma à Marseille et en PACA">
   <meta name="twitter:description" content="Réseau de professionnels en PACA pour vos projets événementiels, spectacle et cinéma.">
   <meta name="twitter:image" content="https://massiliaconnection.com/asset/logo/favicon-octopus.png">
+  <meta name="twitter:image:alt" content="Logo Massilia Connection, collectif événementiel à Marseille et en PACA">
 
   <link rel="stylesheet" href="massilliaconnection.css">
   <link rel="icon" type="image/png" sizes="64x64" href="asset/logo/favicon-octopus.png?v=2">
@@ -31,19 +37,43 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Massilia Connection",
-    "url": "https://massiliaconnection.com/",
-    "image": "https://massiliaconnection.com/asset/logo/favicon-octopus.png",
-    "description": "Collectif de professionnels de l'evenementiel, du spectacle et du cinema en region PACA.",
-    "areaServed": "Provence-Alpes-Cote d'Azur",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Marseille",
-      "addressRegion": "PACA",
-      "addressCountry": "FR"
-    },
-    "email": "massilia.connection.prod@gmail.com"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://massiliaconnection.com/#website",
+        "url": "https://massiliaconnection.com/",
+        "name": "Massilia Connection",
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://massiliaconnection.com/#professionalservice",
+        "name": "Massilia Connection",
+        "url": "https://massiliaconnection.com/",
+        "image": "https://massiliaconnection.com/asset/logo/favicon-octopus.png",
+        "description": "Collectif de professionnels de l'evenementiel, du spectacle et du cinema en region PACA.",
+        "areaServed": [
+          "Marseille",
+          "Aix-en-Provence",
+          "Toulon",
+          "Avignon",
+          "Nice",
+          "Cannes",
+          "Monaco",
+          "Provence-Alpes-Cote d'Azur"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marseille",
+          "addressRegion": "Provence-Alpes-Cote d'Azur",
+          "addressCountry": "FR"
+        },
+        "email": "massilia.connection.prod@gmail.com",
+        "sameAs": [
+          "https://massiliaconnection.com/"
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -92,7 +122,7 @@
   <!-- QUI SOMMES NOUS -->
   <div class="sec alt" id="histoire">
     <div class="sec-tag">Qui sommes-nous</div>
-    <div class="sec-heading">Notre histoire</div>
+    <h2 class="sec-heading">Notre histoire</h2>
     <div class="teal-bar"></div>
     <div class="about-grid">
       <div>
@@ -110,7 +140,7 @@
   <!-- PARTENAIRES -->
   <div class="sec" id="partenaires">
     <div class="sec-tag">Réseau local</div>
-    <div class="sec-heading">Nos partenaires</div>
+    <h2 class="sec-heading">Nos partenaires</h2>
     <div class="teal-bar"></div>
     <div class="partner-hook">Des talents d'ici, des partenaires locaux, et une force de terrain 100% PACA.</div>
     <div class="para">Nous privilégions les acteurs de proximité pour garantir réactivité, qualité et ancrage régional sur chaque projet.</div>
@@ -174,7 +204,7 @@
   <!-- NOS ÉQUIPES -->
   <div class="sec" id="equipes">
     <div class="sec-tag">Nos expertises</div>
-    <div class="sec-heading">Nos équipes</div>
+    <h2 class="sec-heading">Nos équipes</h2>
     <div class="teal-bar"></div>
     <div class="teams-grid">
       <div>
@@ -223,7 +253,7 @@
   <!-- MATÉRIEL -->
   <div class="sec alt" id="materiel">
     <div class="sec-tag">Mise à disposition</div>
-    <div class="sec-heading">Notre matériel</div>
+    <h2 class="sec-heading">Notre matériel</h2>
     <div class="teal-bar"></div>
     <div class="para">Nous sommes en relation avec de nombreux prestataires de la région et profitons d'un large choix de matériels et d'avantages.</div>
     <div class="mat-photos">
@@ -236,7 +266,7 @@
   <!-- RÉFÉRENCES -->
   <div class="sec" id="references">
     <div class="sec-tag">Ils nous ont fait confiance</div>
-    <div class="sec-heading">Vous avez pu nous croiser…</div>
+    <h2 class="sec-heading">Vous avez pu nous croiser…</h2>
     <div class="teal-bar"></div>
     <div class="para">Plus de 20 ans d'expérience en indépendant, présents sur tous les grands festivals et événements du sud-est.</div>
 
@@ -293,7 +323,7 @@
   <!-- CONTACT -->
   <div class="sec alt" id="contact">
     <div class="sec-tag">Travaillons ensemble</div>
-    <div class="sec-heading">Contact</div>
+    <h2 class="sec-heading">Contact</h2>
     <div class="teal-bar"></div>
     <div class="contact-grid">
       <div class="contact-card contact-main">
