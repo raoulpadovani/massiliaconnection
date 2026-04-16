@@ -58,12 +58,12 @@
   .frame {
     position: relative;
     z-index: 2;
-    border: 1px solid var(--line);
-    border-radius: 18px;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
     background: linear-gradient(180deg, rgba(12,18,25,0.93), rgba(9,13,19,0.95));
     color: var(--text-main);
-    box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+    box-shadow: none;
   }
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; border-bottom: 0.5px solid var(--line); background: linear-gradient(90deg, rgba(46,196,182,0.9), rgba(102,233,221,0.92)); color : #07231f; position: sticky; top: 0; z-index: 40; backdrop-filter: blur(10px); animation: navDrop 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both; transition: padding 0.26s ease, box-shadow 0.26s ease, background 0.26s ease; }
   .nav.nav-scrolled {
